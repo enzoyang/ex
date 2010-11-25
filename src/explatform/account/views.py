@@ -1,5 +1,5 @@
 #coding:UTF-8
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response as rtr
 def Register(request):
-    return render_to_response()
+    return rtr()
 
