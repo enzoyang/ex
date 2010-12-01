@@ -9,8 +9,5 @@ class UserRegisterForm(forms.Form):
     
     def clean(self):
         cd = self.cleaned_data
-        for st in cd:
-            print st
-        #_NickName = cd['NickName']
-        #_Email = cd['Email']
-        #_Password = cd['Password']
+        _Email = cd.get('Email')
+        print _Email
