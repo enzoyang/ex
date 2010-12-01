@@ -12,11 +12,11 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'ex',                      # Or path to database file if using sqlite3.
-        'USER': 'enzo',                      # Not used with sqlite3.
-        'PASSWORD': '85418',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+        'NAME': 'explatform', # Or path to database file if using sqlite3.
+        'USER': 'enzo', # Not used with sqlite3.
+        'PASSWORD': '85418', # Not used with sqlite3.
+        'HOST': '', # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '', # Set to empty string for default. Not used with sqlite3.
         'OPTIONS': {
             'autocommit': True,
         }
@@ -81,10 +81,12 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+                  'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
-    'explatform.account'
+    'explatform.account',
+    
 )
