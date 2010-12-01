@@ -2,7 +2,7 @@ from django.conf.urls.defaults import *
 from django.contrib import admin
 admin.autodiscover()
 urlpatterns = patterns('',
-                      # (r'^Register/$', 'explatform.account.views.Register'),
+                      (r'^Register/$', 'explatform.account.views.UserRegister'),
     # Example:
     # (r'^explatform/', include('explatform.foo.urls')),
 
